@@ -1,5 +1,6 @@
 name: SendGrid Action
 uses: peter-evans/sendgrid-action@v1.0.1
+on: push
 env:
   SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
   SCRIPT_FILEPATH: ./some-path/email-sending-script.js
